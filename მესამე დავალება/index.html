@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tech Space Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tech Space Registration Survey Form</h1>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+        </div>
+        <div class="form-group">
+          <label for="experience">Programming Experience (in years):</label>
+          <input type="number" id="experience" name="experience" required />
+        </div>
+        <div class="form-group">
+          <label for="interest"
+            >Which programming languages are you interested in? (Check all that
+            apply)</label
+          ><br />
+          <input type="checkbox" id="c" name="languages[]" value="C" />
+          <label for="c">C</label>
+          <input type="checkbox" id="cpp" name="languages[]" value="C++" />
+          <label for="cpp">C++</label>
+          <input type="checkbox" id="java" name="languages[]" value="Java" />
+          <label for="java">Java</label>
+          <input
+            type="checkbox"
+            id="python"
+            name="languages[]"
+            value="Python"
+          />
+          <label for="python">Python</label>
+          <input
+            type="checkbox"
+            id="js"
+            name="languages[]"
+            value="JavaScript"
+          />
+          <label for="js">JavaScript</label>
+        </div>
+        <div class="form-group">
+          <label for="reason">Why do you want to join Tech Space?</label>
+          <textarea id="reason" name="reason" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="expectations"
+            >What are your expectations from Tech Space?</label
+          >
+          <textarea
+            id="expectations"
+            name="expectations"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
